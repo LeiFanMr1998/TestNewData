@@ -1,0 +1,623 @@
+输出----print();
+
+可以直接输入两个算数  Python会直接算出
+
+Python 变量不限制范围
+
+print ("i"*8)会打印8次i;
+
+换行也是\n
+
+print("i"+8);//这样会报错的
+
+Python 不用{}表示函数体 要用缩进！！！！
+
+
+
+
+-----------------------------------
+文字游戏 
+
+temp=input("请输入：")	
+
+value=int(temp);
+
+if value==8：
+	print("恭喜你猜对了");
+else 
+ 	print("真笨");
+
+
+
+
+总结：变量声明不需要类型   if不用加() 也不用加函数体 不过要加：
+input() 会自动提示你输入的   参数可以填写字符串
+
+-----------------------------------
+
+
+Python 没有变量  只有名字
+
+命名规则跟C++相同
+
+
+字符串 既可以用单引号  还可以用双引号
+
+切记  两面的符号要相同  
+
+如果出现以下情况
+Let's时
+用转移字符
+Let\'s
+
+原始字符串 在字符串前面加r
+原始字符串末尾不可以加\
+
+
+用3个"可以打印出原版内容不用加\n
+
+
+
+
+and  相当于c++里的&&
+or   跟c++一样||
+not  跟c++一样
+3<4<5 这样是可以的 返回一个布尔
+
+
+
+导入外援-随机-----import random
+
+random.randint(1,50)---就会随机出一个1-50的数字
+
+e4  为10 的4次方
+
+True+True =1
+
+
+True+Falase=0
+
+
+True=1；
+False=0；
+
+
+
+浮点数转换整型(直接舍去小数部分)
+
+例如5.88转为整型为5；
+
+elif  为else if的缩写
+
+type() 参数任意类型   会返回参数的类型
+
+isinstances(,)两个参数  前面为使用内容  后面为类型
+如果对应的类型一致 返回Ture 否则返回 False
+
+a+=10;这样也可以跟c++相同
+
+** 为次幂  
+例如  2**3 表示2的3次幂
+  
+
+除法    可以用/  得到一个准确的值带小数
+	如果用//得到的是一个整数
+
+
+assert  条件为fasle的话 会自动崩溃以及异常
+
+
+for循环 ---类似foreach
+favoutite="LeiFanMr";
+for i in favourite
+
+lin(favoutite)------当前下标
+
+print(i,end=" ");
+
+
+range([strat,]stop[,step=1]，步长)
+传一个参数为从0开始到n-1,传两个参数从start开始到stemp-1
+list(range(5));
+[0,1,2,3,4]
+
+
+break;跟C++一样
+continue; 跟C++一样
+
+列表----类似于c++的数组
+
+列表支持多类型一起存储
+
+创建一个空列表
+
+empty=[]
+
+添加元素到列表
+enpty.append("hh"); 向列表里存东西 只能一次加一个自动添加到末尾
+
+enpty.extend(["1","50"]);参数为一个列表 自动加到末尾
+
+enpty.insert(位置,元素);
+
+
+
+enpty.remove(元素的名字);
+
+
+del 不是方法  
+del enpty[1];这么用
+
+del enpty; 清空enpty;
+
+enpty.pop();---->无参默认返回最后一个值 有参数则为下表 并且从列表中移除该元素
+
+
+
+拷贝
+empty[ :3]
+0-3 拷贝3个元素
+
+empty[1:]
+
+拷贝从下表1到最后
+
+empty[:]
+拷贝所有元素
+
+
+
+列表可以比较大小
+从第一个元素开始比较
+两个列表相加 为 列表的拼接
+
+
+
+如何判断列表中有没有自己想要的内容
+
+123 in  empty--------------->如果123存在于empty就返回True
+相反返回false
+
+
+123 not in empty------->如果123存在于empty就返回False
+相反返回True;
+
+列表中可以存在列表哦
+[1,2,["你好",4],88]
+
+可以用类似于c++中二维数组访问列表中的列表
+
+
+count()--------------->计算参数在列表中出现的次数
+
+index()--------------->返回参数在列表中的第一个位置
+第二个参数 为范围
+
+
+reverse()------------->把列表反转  倒着输出
+
+sort()---------------->无参数默认从小到大排序 归并排序
+
+有三个参数(func,key,reverse=True);
+如果reverse=True就会反向从大到小排序
+
+
+
+
+元组  不可以任意修改元素 
+
+创建方式
+tuple1=(1,2,3,4,5,6,7,8,9);
+
+tuple2=1,2,3,4,5;
+
+tuple3=()----->空元祖
+
+访问形式是跟列表一样的
+拷贝也是跟列表一样的
+
+
+temp=(1,2,3);
+
+temp=temp[:2]+("哈",)+temp[2:]--->不可以改变元素可以使用种方法
+
+
+直接输入链表名字即可打印出该数组里存储的所有物品。
+
+
+
+
+
+字符串：
+str="woaini";
+str.capitalize();----------->把str里内容第一个字母转成大写！
+
+str.casefold();------------>把str里所有字符改成小写
+
+str.center(width);--------------->将字符串居中，并使用空格填充
+至长度width的新字符串
+
+str.count(sub,[start,[end]])----返回在制定的范围出现sub的次数
+
+str.endswith(sub,[start,[end]])---检查字符串是否与sub子字符串结束，
+如果是返回True，否则返回False，可选范围start 与end;
+
+
+str.find(sub,[start,[end,]]);在制定的范围找sub 返回第一个值 找不到返回False
+str.rfind(sub,[start],[end,]);跟find一样不过从右边开始找
+
+
+str.isalnum()-------->如果字符串至少有一个字符并且所有字符都是字母或数字
+则返回True,否则返回False;
+
+
+
+str.isalpha()如果字符串至少有一个字符并且所有字符第都是字母则返回True
+否则返回False;
+
+isdecimal();
+如果字符串只包含十进制数字则返回True,否则返回False
+isdigit();
+如果字符串只包含数字则返回True,否则返回Fasle;
+
+islower();
+如果所有的字符为小写则返回True，否则返回False；中文也是返回Fasle；
+
+isnumeric()只包含数字True，否则False;
+isspace();如果字符串中只包含空格返回True；否则返回Fales；
+istitle();是否标题话是返回True，否则False；
+
+join(sub)以字符串作为分隔符,插入到sub种所有的中间
+
+
+partition(sub)     找到sub，把字符串分成3个元组(一sub作为界限)，如果字符串中不包含sub则返回原字符串
+
+
+replace(old,new[,count])把字符串中的old自字符串替换成new自字符串，如果count指定，则替换不超过count次；
+
+rstrip()	 删除字符串末尾的空格
+
+split(sep=None,maxsplit=1)  默认自动以空格来切
+填入什么就以什么来切
+
+startswith(prefix)  检查字符串是否以prefix开头是返回True，否则返回False；
+
+
+swapcase()   反转字符串中的大小写
+
+
+
+
+
+"{0} love{1} {2}".format("I","You","Ha");
+输出：I love You Ha;
+
+关键字参数
+"{a} love {b} {c}".format(a="I",b="You",c="Ha")
+输出：I love You Ha;
+
+
+两者混合
+"{0} love {b} {c}".format("I",b="You",c="Ha")
+第一个必须为{0}，不可以用关键字
+
+
+
+
+"{{0}}".format("不打印");
+
+输出：{0};
+
+"{0:.1f{1}}{1}".format(27.568,"GB")
+
+
+
+
+
+
+'%c' % 97
+
+输出'a'
+
+
+'%c %c %c' %(97,98,99)---------------->多个转 要用元组
+'a b c'
+%c  格式化字符及其ASCII码
+%d 格式化整数
+%s 格式化字符串
+
+%o 八进制
+%xX 格式化无符号十六进制
+%f 格式化定点数，可指定小数点后的精度
+%e 用科学计数法格式化定点数
+%E作用同%e
+%g 根据值的大小决定使用%f活%e
+%G作用同%g
+
+
+
+
+
+
+序列
+
+a=list();
+b="I Love LiDongRan"
+b=list(b)
+把b转成列表
+c=(1,1,2,3,5,8,13)
+c=list(c)
+把元组转成列表
+
+tuple()把可迭代对象转换成元组
+
+str(obj)  把obj转换成字符串
+
+len(sub) 返回sub的长度
+max()返回序列 或参数最大的值
+sum方法
+sum()返回序列的总和
+
+可以比较字符 (as码)
+
+使用max与sum方法是要注意 序列或者元组的类型要一致！
+
+sorted();跟list.sort()一样实现方式是一样的
+reversed();返回一个迭代器对象
+
+list(reversed(列表))
+
+
+enumerate();枚举
+list(enumerate(numbers));
+
+
+a=[1,2,3,4,5,6,7,8]
+b=[4,5,6,7,8,9]
+zip(a,b);
+
+list(zip(a,b)) 
+
+输出：[(1,4),(2,5),(3,6),(4,7),(5,8),(6,9)]
+把 a b的共有的个数的都生成元组
+
+
+
+
+面向对象：
+
+定义函数：
+
+def MyFirst():
+	print("这是创建的第一个函数")
+	print("哈哈哈")
+	print("感谢我自己")
+	
+MyFirst()----------函数的调用！
+
+
+
+def test(*params)
+	print("参数的长度是:"len(params));
+	print("第二个参数是:"params[1]);
+
+test("aaa",1,3);
+运行的结果：
+参数的长度是：3
+第二个参数是：1
+有搜集参数 还有自己定义的参数  最好给它默认值！！
+
+
+
+局部变量 Local Variable
+ 
+全局变量 Global Variable
+
+
+
+在局部变量前加global可以是变量变成全局变量
+
+支持函数的嵌套！！！！
+
+
+
+闭包：
+
+def FunX(x):
+	def FunY(y)
+		return x*y
+	return FunY
+
+方法一
+i=FunX(8)
+i(5)
+输出：40
+
+方法二
+	FunX(8)(5)
+输出：40
+
+
+
+
+def Fun()：
+	x=5
+	def Fun2():
+		x*=x
+		return x;
+	return Fun2();
+	
+这里的x是会报错的  因为x是局部变量 
+
+nonlocal 关键字  
+def Fun():
+	x=5;
+	def Fun1():
+		nonlocal x
+		x*=x;
+		return x
+	return Fun1()
+
+
+
+匿名函数
+
+lambda 参数:返回值
+
+lambda x,y:return x+y;
+
+
+
+filter() 有两个参数  第一个可以是None，函数。  第一个数如果为函数
+则后面的参数为一个可迭代的对象(容器)
+
+
+
+list(map(lambda x: x*2,range(10)))
+输出：[0,2,4,6,8,10,12,14,16,18]
+
+
+
+递归：
+def factorial(n):
+	if n==1
+	   return 1;
+	else
+	   return n*factorial(n-1)
+
+字典
+
+dict4 = dict((('A',70),('B',80),('C',900)))
+dict4 = dict(我="雷凡",她="她");
+可以像数组一样赋值
+
+dict4['我']="还是雷凡";
+
+
+当索引不好用时
+
+dict1={}
+dict1.fromkeys(1,2,3)
+输出None,None,None
+dict1.fromkeys((1,2,3),("One","Tow","Three"))
+
+输出{1:("One","Tow","Three"),2:("One","Tow","Three"),3:("One","Tow","Three")}
+dict1.forkeys((1,3),"数字")
+输出{1:"数字",3:"数字"}
+
+dict1=dict1.formkeys(range(10),'赞')
+
+输出：赞赞赞赞赞赞赞赞赞赞
+
+for eacjkey in dict1.keys():
+	print(eacjkey)
+输出：
+	0
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+
+for eacjkey in dict1.values():
+	print(eacjkey)
+输出：
+	赞
+	赞
+	赞
+	赞
+	赞
+	赞
+	赞
+	赞
+	赞
+	赞
+
+
+for eacjkey in dict1.items():
+	print(eacjkey)
+输出：
+	(0,赞)
+	(1,赞)
+	(2,赞)
+	(3,赞)
+	(4,赞)
+	(5,赞)
+	(6,赞)
+	(7,赞)
+	(8,赞)
+	(9,赞)
+
+dict1.get(32)------->判断字典中有没有该key
+
+
+
+
+集合：
+创建集合的方法：
+一 ：直接用{}括起来
+
+二：用st1= set([1,2,3,4,5,6,0])
+
+把集合转换成list,list(set(set1))
+输出：[0,1,2,3,4,5,6]
+
+
+不可变集合：
+frozen
+num=frozenset([1,2,3,4,5])
+
+
+num.add(0)
+这样会报错
+所以用了frozenset以后这个是不可变的。
+
+
+打开文件：
+f=open("E:\\text.txt")--->可以动态创建
+
+文件读写的方法：
+	f.close()--------------->关闭文件
+	f.read(size=1)从文件读取size 个字符,当未给定size 或给负值时，读取所有的字符串
+	然后作为字符串返回
+	f.readline()-------->以写入模式打开，如果文件存在，则在末尾写入
+	f.write(str)-------->将字符串写入文件
+	f.writelines(seq)----->向文件写入字符串序列seq,seq应该是一个返回字符串的可迭代对象
+	f.seek(offset,from)--->在文件中移动文件指针,从from(0代表文件 起始位置,
+	1代表当前位置,2代表文件末尾)偏移offser个字节 
+	f.tell()-------->返回当前在文件中的位置
+
+
+
+
+
+
+
+os模块 
+getcwd()----->返回当工作目录
+chdir(path)  改变工作目录
+listdir(path=".")----->列举指定目录中的文件名(".")
+
+
+
+
+
+
+pickle
+
+导入pickle
+import pickle
+
+my_list=[123,3.14]
+pick_file=opne("my.ply",'wb')//后缀随便起，不过后面一个参数一定要是wb
+pick_file.dump(my_list,my)//写入文件
+pick_file.close
+
+
+//从文件中拿到数据
+pick_open=open('my.ply','wb')
+pick_file.load(pick_open)
